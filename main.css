@@ -22,7 +22,7 @@ body
 }
 header
 {
-   background-color: mistyrose;
+   background-color: rgba(219, 174, 170, 0.918);
    position: absolute;
    top: 0;
    left: 0;
@@ -68,7 +68,7 @@ float: inline-end;
     color: white;
     border-radius: 20px;
     border: 2px solid ;
-    background-color: rgba(250, 165, 165, 0.705);
+    background-color: rgba(219, 174, 170, 0.918);
 }
 .butt span 
 {
@@ -99,7 +99,7 @@ float: inline-end;
     right: 0;
 }
 .butt:hover{
-    background-color: #7e00fc49;
+    background-color: #ac738adc;
     color: white;}
 
 #titfont
@@ -442,4 +442,8 @@ footer
     right: 30px;
     font-size: 26px;
     z-index: 3;
+}
+.library:hover
+{
+    transform: scale(1.1);
 }
