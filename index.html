@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>YanYU|PROFILE</title>
     <link rel="icon" href="logo/unicorn.png" type="image/x-icon" />
-    <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js'></script>
+    
     <style>
         
         
@@ -29,69 +29,7 @@
         <audio id="music2" src="Wolfgang.wav"  loop="loop" autoplay="autoplay">你的瀏覽器不支援audio標籤。</audio>    
         <a href="javascript:playPause();"><img class="music" src="logo/music.png" width="48" height="50" id="music_btn2" border="0"></a>  
     </header>
-    <script>
     
-    function playPause() 
-    {    
-        var music = document.getElementById('music2');    
-        var music_btn = document.getElementById('music_btn2');    
-        if (music.paused)
-        {    
-            music.play();    
-            music_btn.src = 'logo/music.png';    
-        }    
-        else
-        {    
-            music.pause();    
-            music_btn.src = 'logo/music.png';     
-        }    
-    }  
-    $(function(){
-            $("#gotop").click(function(){
-                jQuery("html,body").animate({
-                    scrollTop:0
-                },700);
-            });
-            $(window).scroll(function() {
-                if ( $(this).scrollTop() > 430){
-                    $('#gotop,#about,#skill').fadeIn("fast");
-                } else {
-                    $('#gotop').stop().fadeOut("fast");
-                }
-            });
-        });
-        $(function () {
-        
-        var city_top = $('.section2').offset().top;
-        $('#about').click(function () {
-            $('html,body').animate({scrollTop:city_top},500);
-    })
-    })
-    $(function () {
-        
-        var city_top = $('.section3').offset().top;
-        $('#skill').click(function () {
-            $('html,body').animate({scrollTop:city_top},500);
-    })
-    })
-    $(function () {
-        
-        var city_top = $('.section5').offset().top;
-        $('#E').click(function () {
-            $('html,body').animate({scrollTop:city_top},500);
-    })
-    })
-    $(function () {
-        
-        var city_top = $('.section6').offset().top;
-        $('#contact').click(function () {
-            $('html,body').animate({scrollTop:city_top},500);
-    })
-    })
-     </script>
-     <script>
-       
-     </script>
 
      <a href="#" id="gotop"> ^ </a>
     <section>
@@ -334,7 +272,67 @@
     
     
     </section>
+    <script src='https://code.jquery.com/jquery-3.6.0.min.js'></script>
+    <script>
     
-    
+    function playPause() 
+    {    
+        var music = document.getElementById('music2');    
+        var music_btn = document.getElementById('music_btn2');    
+        if (music.paused)
+        {    
+            music.play();    
+            music_btn.src = 'logo/music.png';    
+        }    
+        else
+        {    
+            music.pause();    
+            music_btn.src = 'logo/music.png';     
+        }    
+    }  
+    $(function(){
+            $("#gotop").click(function(){
+                jQuery("html,body").animate({
+                    scrollTop:0
+                },700);
+            });
+            $(window).scroll(function() {
+                if ( $(this).scrollTop() > 430){
+                    $('#gotop,#about,#skill').fadeIn("fast");
+                } else {
+                    $('#gotop').stop().fadeOut("fast");
+                }
+            });
+        });
+        $(function () {
+        
+        var city_top = $('.section2').offset().top;
+        $('#about').click(function () {
+            $('html,body').animate({scrollTop:city_top},500);
+    })
+    })
+    $(function () {
+        
+        var city_top = $('.section3').offset().top;
+        $('#skill').click(function () {
+            $('html,body').animate({scrollTop:city_top},500);
+    })
+    })
+    $(function () {
+        
+        var city_top = $('.section5').offset().top;
+        $('#E').click(function () {
+            $('html,body').animate({scrollTop:city_top},500);
+    })
+    })
+    $(function () {
+        
+        var city_top = $('.section6').offset().top;
+        $('#contact').click(function () {
+            $('html,body').animate({scrollTop:city_top},500);
+    })
+    })
+     </script>
+     
 </body>
 </html>
